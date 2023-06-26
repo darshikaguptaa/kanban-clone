@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import search from "../../assets/search.png";
 import calendar from "../../assets/calendar.png";
 import message2 from "../../assets/message2.png";
