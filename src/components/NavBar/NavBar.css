@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: calc(83.33% - 40px); Subtracting the sidebar width and padding */
+    height: 13vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    padding-bottom: 0 !important;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #787486;
+    font-size: 14px;
+    font-family: "Inter";
+}
+
+.search-bar i {
+    margin-left: 5px;
+}
+
+.search-bar img {
+    width: 22px;
+    height: 22px;
+    padding-right: 10px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navIcon {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.profile-name {
+    color: #0d062d;
+    top: 10px;
+    text-align: right;
+    position: relative;
+    font-size: 16px;
+    font-family: "Inter";
+}
+
+.profile-city {
+    text-align: right;
+    font-size: 14px;
+    position: relative;
+    bottom: 12px;
+    color: #787486;
+    font-family: "Inter";
+}
+
+.profile img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.arrow {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+@media (max-width: 1050px) {
+    .navbar {
+        width: 100vw;
+    }
+}
+@media (max-width: 1044px) {
+    .navbar {
+        width: auto;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /* .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    } */
+
+    /* .search-bar {
+        margin-bottom: 10px;
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+    }
+
+    .profile {
+        margin-left: 0;
+        margin-top: 10px;
+    } */
+    .navbar {
+        display: none;
+    }
+}

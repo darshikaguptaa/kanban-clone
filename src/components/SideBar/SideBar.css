@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.sidebar {
+    width: 16.67%;
+    height: 97vh;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.leftArrow {
+    width: 26px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar-header h2 {
+    color: #0d062d;
+    width: 98px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.sideIcon {
+    width: 24px;
+    height: 24px;
+    padding-right: 10px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #787486;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+hr {
+    width: 0px;
+}
+
+.sidebar-projects {
+    flex-grow: 1;
+}
+
+.projectHeading {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0px;
+}
+
+.projectHeading img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.sidebar-projects h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #787486;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.projectDot {
+    width: 8px;
+    height: 8px;
+    margin: 1.5px 20px 1.6px 1.2px;
+    border-radius: 8px;
+    background: #7ac555;
+}
+
+.sidebar-projects ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+}
+
+.sidebar-projects li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-projects li p {
+    cursor: pointer;
+    color: #787486;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.sidebar-thoughts {
+    margin-top: 20px;
+    text-align: center;
+    width: 85%;
+}
+
+.sidebar-thoughts img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-thoughts h4 {
+    color: #000;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.sidebar-thoughts p {
+    color: #787486;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Inter";
+}
+
+.closeIcon,
+.drawerIcon {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .sidebar-projects li p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .sidebar-projects ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1;
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 16.67%;
+        height: 97vh;
+        background-color: #f1f1f1;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .sidebar-header {
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .x {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .leftArrow {
+        width: 26px;
+        height: 20px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .sidebar-header h2 {
+        color: #0d062d;
+        width: 98px;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+    }
+
+    .sideIcon {
+        width: 24px;
+        height: 24px;
+        padding-right: 10px;
+    }
+
+    .sidebar-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+    .sidebar-menu li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-menu a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #787486;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 500;
+    }
+
+    .sidebar-menu i {
+        margin-right: 10px;
+    }
+
+    hr {
+        width: 0px;
+    }
+
+    .sidebar-projects {
+        flex-grow: 1;
+    }
+
+    .projectHeading {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 16px 0px;
+    }
+
+    .projectHeading img {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .sidebar-projects h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #787486;
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .projectDot {
+        width: 8px;
+        height: 8px;
+        margin: 1.5px 20px 1.6px 1.2px;
+        border-radius: 8px;
+        background: #7ac555;
+    }
+
+    .sidebar-projects ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 0;
+        margin: 0;
+    }
+
+    .sidebar-projects li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-projects li p {
+        cursor: pointer;
+        color: #787486;
+        font-size: 16px;
+        font-family: "Inter";
+        font-weight: 500;
+    }
+
+    .sidebar-thoughts {
+        margin-top: 20px;
+        text-align: center;
+        width: 85%;
+    }
+
+    .sidebar-thoughts img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar-thoughts h4 {
+        color: #000;
+        font-size: 14px;
+        font-family: "Inter";
+        font-weight: 500;
+    }
+
+    .sidebar-thoughts p {
+        color: #787486;
+        text-align: center;
+        font-size: 12px;
+        font-family: "Inter";
+    }
+
+    .drawerIcon,
+    .closeIcon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .drawerIcon img,
+    .closeIcon img {
+        color: #787486;
+        width: 30px;
+        height: 30px;
+    }
+
+    .drawerIcon:hover,
+    .closeIcon:hover {
+        background-color: #dcdcdc;
+    }
+    .sidebar-thoughts {
+        display: none;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 16.67%;
+        height: 97vh;
+        /* display: none !important; */
+        background-color: #f1f1f1;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        transition: width 0.3s ease;
+    }
+    .sidebar.open {
+        display: flex !important;
+        background-color: white;
+        z-index: 100;
+        width: 100%;
+    }
+    .drawerIcon {
+        display: block;
+    }
+}
