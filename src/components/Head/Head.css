@@ -188,6 +188,15 @@
     }
 }
 
+@media (max-width: 390px) {
+    .part2 {
+        margin-left: 30px;
+    }
+
+    .right1 {
+        width: auto;
+    }
+}
 @media (max-width: 500px) {
     .left2 {
         display: none;
